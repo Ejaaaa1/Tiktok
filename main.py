@@ -25,17 +25,17 @@ api = int(os.environ.get('API_KEY'))
 hash = os.environ.get('API_HASH')
 chnnl = os.environ.get('CHANNEL_URL')
 BOT_URL = os.environ.get('BOT_URL')
-app = Client("JayBee", bot_token=bot_token, api_id=api, api_hash=hash, workers=workers)
+app = Client("Jamet", bot_token=bot_token, api_id=api, api_hash=hash, workers=workers)
 
 
 
 @app.on_message(filters.command('start'))
 def start(client, message):
-    kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Repo 🔰', url="https://github.com/Ejaaaa1/TikTok/")]]
+    kb = [[InlineKeyboardButton('Channel 🎭', url=chnnl),InlineKeyboardButton('Repo 🎯', url="https://github.com/Ejaaaa1/TikTok/")]]
     reply_markup = InlineKeyboardMarkup(kb)
     app.send_message(chat_id=message.from_user.id, text=f"Halo pantek, Gw  **Bot Nyolong Tiktok**.\nGw bisa nyolong video dari tiktok ga pake watermark,.\n\n"
                           "__**Developer :**__ __@Consoleisinputredirected__\n"
-                          "__**Language :**__ __Python__\n"
+                          "__**Language :**__ __🧩 Python__\n"
                           "__**Framework :**__ __🔥 Pyrogram__",
                      parse_mode='md',
                      reply_markup=reply_markup)
@@ -45,7 +45,7 @@ def start(client, message):
 
 @app.on_message(filters.command('help'))
 def help(client, message):
-    kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Repo 🔰', url="https://github.com/Ejaaaa1/TikTok/")]]
+    kb = [[InlineKeyboardButton('Channel 🎭', url=chnnl),InlineKeyboardButton('Repo 🎯', url="https://github.com/Ejaaaa1/TikTok/")]]
     reply_markup = InlineKeyboardMarkup(kb)
     app.send_message(chat_id=message.from_user.id, text=f"Halo pantek , Gw **Bot Nyolong Tiktok**.\nGw bisa nyolong video tiktok, coba sini linknya.\n\n"
                                             "__Kirim Kesini Linknya__",
@@ -109,7 +109,7 @@ def tiktok_dl(client, message):
                         show = 0
 
         a.edit(f'__Lagi donlot sabar !\n'
-               f'Bentar lagi diupload ke telegram ⏳__')
+               f'Bentar lagi diupload ke telegram 🕰__')
         start = time.time()
         title = filename
         app.send_document(chat_id=message.chat.id,
