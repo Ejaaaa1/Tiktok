@@ -1,0 +1,40 @@
+{
+  "name": "JayBee TikTok Downloader Bot",
+  "description": "A Telegram bot to download TikTok videos without any watermark",
+  "logo" : "https://telegra.ph/file/4fcf324da7e433c2f62fa.jpg",
+  "success_url" : "https://t.me/Jamettapirobot",
+  "keywords": [
+    "telegram",
+    "bot",
+    "tiktok",
+    "Jamettapirobot"
+  ],
+  "repository": "https://github.com/Ejaaaa1/TikTok",
+  "website": "https://github.com/Ejaaaa1/TikTok",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your bot Bot Token, get this value from @BotFather.",
+      "value": ""
+    },
+    "API_KEY": {
+      "description": "Your APP API KEY, get this from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your APP HASH, get this from https://my.telegram.org",
+     "value": ""
+    },
+    "CHANNEL_URL": {
+      "description": "URL of your Telegram channel link.",
+      "value": ""
+    },
+    "BOT_URL": {
+      "description": "Username of your Telegram Bot (without @). Example: Jamettapirobot",
+      "value": ""
+    },
+    "WORKERS": {
+      "description": "Number of threads to use, this depends on usage.  4 is the recommended (and default) amount, but your experience may vary.",
+      "value": "4"
+    }
+  }
+}
