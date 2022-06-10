@@ -34,8 +34,8 @@ def start(client, message):
     kb = [[InlineKeyboardButton('Channel 🎭', url=chnnl),InlineKeyboardButton('Repo 🎯', url="https://github.com/Ejaaaa1/TikTok/")]]
     reply_markup = InlineKeyboardMarkup(kb)
     app.send_message(chat_id=message.from_user.id, text=f"Halo pantek, Gw  **Bot Nyolong Tiktok**.\nGw bisa nyolong video dari tiktok ga pake watermark,.\n\n"
-                          "__**Developer :**__ __@damssyx__\n"
-                          "__**Language :**__ __🧩 Python__\n"
+                          "__**Developer :**__ __@Consoleisinputredirected__\n"
+                          "__**Language :**__ __Python__\n"
                           "__**Framework :**__ __🔥 Pyrogram__",
                      parse_mode='md',
                      reply_markup=reply_markup)
