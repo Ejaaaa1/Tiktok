@@ -34,7 +34,7 @@ def start(client, message):
     kb = [[InlineKeyboardButton('Channel 🎭', url=chnnl),InlineKeyboardButton('Repo 🎯', url="https://github.com/Ejaaaa1/TikTok/")]]
     reply_markup = InlineKeyboardMarkup(kb)
     app.send_message(chat_id=message.from_user.id, text=f"Halo pantek, Gw  **Bot Nyolong Tiktok**.\nGw bisa nyolong video dari tiktok ga pake watermark,.\n\n"
-                          "__**Developer :**__ __@Consoleisinputredirected__\n"
+                          "__**Developer :**__ __@damssyx__\n"
                           "__**Language :**__ __🧩 Python__\n"
                           "__**Framework :**__ __🔥 Pyrogram__",
                      parse_mode='md',
@@ -45,9 +45,9 @@ def start(client, message):
 
 @app.on_message(filters.command('help'))
 def help(client, message):
-    kb = [[InlineKeyboardButton('Channel 🎭', url=chnnl),InlineKeyboardButton('Repo 🎯', url="https://github.com/Ejaaaa1/TikTok/")]]
+    kb = [[InlineKeyboardButton('Channel 📡', url=chnnl),InlineKeyboardButton('Repo 🎯', url="https://github.com/Ejaaaa1/TikTok/")]]
     reply_markup = InlineKeyboardMarkup(kb)
-    app.send_message(chat_id=message.from_user.id, text=f"Halo pantek , Gw **Bot Nyolong Tiktok**.\nGw bisa nyolong video tiktok, coba sini linknya.\n\n"
+    app.send_message(chat_id=message.from_user.id, text=f"Halo pantek , Gw **Bot Buat Nyolong Video Tiktok**.\nGw bisa nyolong video tiktok, coba sini linknya.\n\n"
                                             "__Kirim Kesini Linknya__",
                      parse_mode='md',
                      reply_markup=reply_markup)
